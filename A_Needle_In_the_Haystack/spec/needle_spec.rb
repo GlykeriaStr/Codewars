@@ -20,4 +20,8 @@ describe  'find_needle' do
   it 'returns "found the needle at position 0" when passed ["needle", "hay", "hay"] ' do
     expect(find_needle(['needle', 'hay',"hay"])).to eq('found the needle at position 0')
   end
+
+  it 'returns "No needle found" when passed ["hay", "hay"]' do
+    expect{ find_needle(["hay", "hay"])}.to raise_error "No needle found"
+  end
 end
