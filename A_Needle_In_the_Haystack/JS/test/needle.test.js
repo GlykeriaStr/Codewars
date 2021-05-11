@@ -25,3 +25,7 @@ test('returns position 2 when passed ["hay", "hay", needle", "hay"]', () => {
     "Found needle at position 2"
   );
 });
+
+test("throws error when there is no needle", () => {
+  expect(() => findNeedle(["hay"])).toThrow("No needle in this hay!");
+});
