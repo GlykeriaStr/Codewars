@@ -1,2 +1,7 @@
 def find_needle(list):
-  return "Found needle at position 0" if len(list) == 1 else "Found needle at position 1"
+  if len(list) == 1: 
+    return "Found needle at position 0"
+  elif len(list) == 2:
+    return "Found needle at position 1"
+  else:
+    return "Found needle at position 2"
