@@ -19,3 +19,9 @@ test('returns position 1 when passed ["hay","needle", "hay"]', () => {
     "Found needle at position 1"
   );
 });
+
+test('returns position 2 when passed ["hay", "hay", needle", "hay"]', () => {
+  expect(findNeedle(["hay", "hay", "needle", "hay"])).toEqual(
+    "Found needle at position 2"
+  );
+});
